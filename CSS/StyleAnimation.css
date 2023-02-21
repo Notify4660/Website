@@ -1,0 +1,292 @@
+/*Стрелка скипа*/
+@keyframes  jump-arrow{
+    0%{
+        bottom: 2.3vw;
+    }
+    25%{
+        bottom: 2vw;
+    }
+    50%{
+        bottom: 1.7vw;
+        color:#e3874f;
+    }
+    75%{
+        bottom: 2vw;
+    }
+    100%{
+        bottom: 2.3vw;
+    }
+}
+
+
+.wrapper .video_bg .skip_banner{
+    animation-name: jump-arrow;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.wrapper .video_bg .skip_banner:hover{
+    animation-play-state: paused;
+}
+.wrapper .video_bg .skip_banner i {
+    animation-name: jump-arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/*Смена картинок*/
+/*
+@keyframes switch-screen {
+    50%{
+        padding-left: 10px;
+        color:white;
+    }
+
+}
+
+.content_block .mini_info_blocks .info_block  a:hover i{
+    animation-name: switch-screen;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+ */
+/*Анимация текста в главном меню*/
+
+.over_display_text p{
+    display: inline-block;
+    animation-duration: 5s;
+
+}
+.over_display_text .w1{
+    transform: translate(0);
+    animation-name: D;
+}
+.over_display_text .w2{
+    transform: translate(0);
+    animation-name: i;
+}
+.over_display_text .w3 {
+    transform: translate(0);
+    animation-name: s;
+}
+.over_display_text .w4{
+    transform: translate(0);
+    animation-name: L;
+}
+.over_display_text .w5{
+    transform: translate(0);
+    animation-name: a;
+}
+.over_display_text .w6{
+    transform: translate(0);
+    animation-name: m;
+}
+.over_display_text .w7 {
+    transform: translate(0);
+    animation-name: p;
+}
+
+@keyframes D {
+    0%{
+        transform: translate(-50vw,-20vh) scale(1.4);
+        color: rgba(227, 135, 79, 0.3);
+    }
+     50%{
+        transform: translate(0vw);
+    }
+
+}
+
+@keyframes i {
+    0%{
+        transform: translate(-50vw,-20vh) scale(1.4);
+        color: rgba(227, 135, 79, 0.3);
+    }
+    40%{
+        transform: translate(0vw);
+    }
+}
+
+@keyframes s {
+    0%{
+        transform: translate(-50vw,-20vh)  scale(1.4);
+        color: rgba(227, 135, 79, 0.3);
+    }
+    30%{
+        transform: translate(0vw);
+
+    }
+}
+
+@keyframes L {
+    0%{
+        transform: translate(55vw,-20vh) scale(1.4);
+    }
+    30%{
+        transform: translate(0vw);
+        color: rgba(227, 135, 79, 0.3);
+    }
+}
+
+@keyframes a {
+    0%{
+        transform: translate(55vw,-20vh)  scale(1.4);
+    }
+    37%{
+        transform: translate(0vw);
+        color: rgba(227, 135, 79, 0.3);
+    }
+}
+
+@keyframes m {
+    0%{
+        transform: translate(55vw,-20vh)  scale(1.4);
+    }
+    44%{
+        transform: translate(0vw);
+        color: rgba(227, 135, 79, 0.3);
+    }
+}
+
+@keyframes p {
+    0%{
+        transform: translate(55vw,-20vh) scale(1.4);
+    }
+    50%{
+        transform: translate(0vw);
+        color: rgba(227, 135, 79, 0.3);
+    }
+}
+
+/*Анимация стрелок "Посмотреть"*/
+@keyframes TextArrowAnimation{
+    50%{
+        word-spacing: 10px;
+    }
+
+}
+.dis_text:hover{
+    animation-name: TextArrowAnimation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+/*Анимация всего сайта*/
+/*
+.description{
+    transform: translateY(5vh);
+}
+.description ._active{
+    transform: translateY(0);
+}
+.image{
+    transform: translate(0px,15vh);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.image ._active{
+    transform: translate(0);
+    opacity: 1;
+}
+
+ */
+
+/*Анимация исчезновения картинки*/
+
+main .image img{
+    animation-duration: 0.5s;
+}
+.mini_blocks .img img{
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+@keyframes HiddenImg {
+    100%{
+        opacity: 0.6;
+    }
+}
+@keyframes ShowImg {
+    0%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes ShowBackImg{
+    0%{
+        opacity: 0.5;
+    }
+
+
+    20%{
+        opacity: 1;
+    }
+}
+
+/* Каталог Анимация */
+
+
+.mainTheme h1{
+    animation-name:AnimationHeaderName;
+    animation-duration: 1s;
+}
+@keyframes AnimationHeaderName {
+    0%{
+        opacity: 20%;
+    }
+    50%{
+
+    }
+    100%{
+        opacity:100%;
+    }
+}
+
+/* Анимация всплывания блоков на главной страницы */
+
+.content_left .block img:first-child{
+    transform: translate(-80%, 0);
+    opacity: 0;
+    transition: all 0.6s ease 0s;
+}
+.content_left .block img:last-child{
+    transform: translate(80%, 0);
+    opacity: 0;
+    transition: all 0.6s ease 0s;
+}
+.content_left .block img._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+
+.double_block .content{
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.double_block .content._active{
+    opacity: 1;
+}
+.double_block .img:first-child{
+    transform: translate(80%, 0);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.double_block .img:last-child{
+    transform: translate(-80%, 0);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.double_block .img._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}

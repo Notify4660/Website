@@ -1,0 +1,212 @@
+@import "header and footer.css";
+
+@font-face {
+    font-family: 'Pro';
+    src: url(../Fonts/Spectral_SC/SpectralSC-Regular.ttf);
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url(../Fonts/Merriweather/Merriweather-Regular.ttf);
+}
+main{
+    display: flex;
+}
+.image{
+    display:flex;
+    width: fit-content;
+    height: fit-content;
+    flex-basis: 50%;
+    position: sticky;
+    top:5vw;
+}
+.image .img_color{
+    margin: 1vw 0 1vw 2vw;
+    width: 50vw;
+    height: 42vw;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+#img_grey, #img_almond, #img_UBlue, #img_forest, #img_coral, #img_white,
+#img_moss, #img_base1, #img_base2{
+    display: none;
+}
+.under_img_button {
+    flex-basis: 5%;
+    display: flex;
+    flex-direction: column;
+    margin: 1vw 2vw 0 0;
+    height: 42vw;
+}
+.under_img_button div{
+    flex-basis: 100%;
+    z-index: 0;
+    margin-left: 0;
+    border: #b2b2b2 solid 1px;
+    width: 1.3vw;
+}
+#button_1{
+    background: radial-gradient(circle, rgba(145,145,145,1) 0%, rgba(31,31,31,1) 57%);
+    border-radius: 0 25px 0 0;
+}
+#button_3{
+    border-radius: 0 0 25px 0;
+}
+
+.description{
+    background: whitesmoke;
+    margin: 1vw;
+    cursor: default;
+
+}
+.description p, .description a, .description h1, .description span{
+    font-family:'Merriweather', serif;
+    font-weight: lighter;
+}
+.description h1{
+    color:#e3874f;
+}
+
+.description h3{
+    font-family: 'Pro', serif;
+    color: #444444;
+    font-weight: bold;
+
+    background: linear-gradient(90deg, rgba(198,198,198,1) 0%, rgba(240,240,240,1) 80%);
+    width: 70%;
+    border-radius: 7px;
+    padding-left: 0.7vw;
+}
+.description a{
+    text-decoration: none;
+    color: #414141;
+}
+.description .colors i{
+    margin: 1vh 2vh 2vh 0;
+}
+
+.description p{
+    padding-left: 0.7vw;
+}
+.text{
+    width: 70%;
+    text-indent: 5px;
+}
+#GreyColor {
+    color: #969696;
+}
+#AlmondColor {
+    color: #e7bf87;
+}
+#UltraBlueColor {
+    color: #0101b7;
+}
+#CoralColor {
+    color: coral;
+}
+#ForestColor {
+    color: #156415;
+}
+#MossColor{
+    color: #728b6e;
+}
+#WhiteColor{
+    color: #ffffff;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+.description .navigation a:hover,
+.description .colors a:hover{
+    color:#e3874f;
+    cursor: pointer;
+}
+#button_4, #button_5{
+    display: none;
+}
+.based{
+    display: flex;
+    line-height: 2;
+}
+.based:hover{
+    color:#e3874f;
+    cursor: pointer;
+}
+.buy{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+.price{
+    margin: 0;
+
+    font-size: 1.5vw;
+    min-font-size:3vw ;
+    font-max-size:3vw ;
+    font-weight: bold;
+    color: #282828;
+}
+.price:after{
+    margin-left: 5px;
+    content: "\20BD";
+}
+.quantity_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    width: 7vw;
+    height: 3vw;
+    background: #d2d2d2;
+    color:#444444;
+}
+.quantity_section .plus,
+.quantity_section .minus,
+.quantity_section .quantity{
+    flex-basis: 33%;
+    font-size: 1.4em;
+}
+.quantity_section .plus p,
+.quantity_section .minus p{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+.quantity_section .quantity textarea{
+    display: flex;
+    justify-content: center;
+
+
+    border: none;
+    background: none;
+    resize: none;
+    font-size: 1.3em;
+
+}
+.quantity_section .plus:hover,
+.quantity_section .minus:hover{
+    color: #e3874f;
+    cursor: pointer;
+}
+.button_basket{
+    margin-left: 25px;
+}
+.button_basket button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px;
+    width: 13vw;
+    height: 3vw;
+    border-radius: 5px;
+    border: none;
+    background: #d2d2d2;
+
+    color: #444444;
+    font-size: 1.4em;
+}
+.button_basket button:hover{
+    color: #868686;
+    cursor: pointer;
+}

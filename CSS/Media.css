@@ -1,0 +1,12 @@
+@media (max-width: 800px){
+    footer .content{
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px){
+    footer .content{
+        width: 90%;
+    }
+
+}

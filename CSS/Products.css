@@ -1,0 +1,64 @@
+@import "header and footer.css";
+@import "StyleAnimation.css";
+
+@font-face {
+    font-family: 'Pro';
+    src: url(../Fonts/Spectral_SC/SpectralSC-Regular.ttf);
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url(../Fonts/Merriweather/Merriweather-Regular.ttf);
+}
+.mainTheme{
+    background: rgb(49,49,49);
+    text-align: center;
+}
+.mainTheme h1{
+    display: inline-block;
+    margin: 4vw 0;
+    color: #e3874f;
+    font-weight: bold;
+    font-size: 3.5vw;
+    letter-spacing: 1.7vw;
+}
+main{
+    margin:5vmin 0;
+    height: 100%;
+    background: whitesmoke;
+    display:grid;
+    grid-template-columns: repeat(4,22%);
+    grid-gap: 5vmin;
+    justify-content: center;
+}
+.block{
+    width: 20vw;
+}
+.block .img img{
+    display: block;
+    height: 22vw;
+    width: 20vw;
+}
+.block .name{
+    padding: 0.5vw;
+    background: #dadada;
+    height: fit-content;
+    text-align: center;
+}
+
+.block .name a{
+    margin: 0.3vw auto;
+    padding: 0.5vw 0;
+    display: inline-block;
+    width: 100%;
+
+    font-size: 1.8vw;
+    color: #6b6a6a;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.block .name a:hover{
+    color: #eea579;
+}
+

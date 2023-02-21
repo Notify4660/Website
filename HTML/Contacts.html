@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DisLamp</title>
+    <meta name="name" content="Light,Shop">
+    <link href="../Favicon/FaviconNew.png" type="image/x-icon" rel="icon">
+    <link rel="stylesheet" type="text/css" href="../CSS/Contacts.css">
+    <script src="https://kit.fontawesome.com/76e0243fe2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header id="head">
+    <div class="logo">
+        <a href="Shop.html">Dis</a><a href="Shop.html">Lamp</a>
+    </div>
+    <nav class="header_text">
+        <ul>
+            <li><a href="Shop.html">Главная</a></li>
+            <li><a>Каталог</a>
+                <ul class="submenu">
+                    <li><a href="../HTML/Prod_BLT.html">BLT</a></li>
+                    <li><a href="../HTML/Prod_Cap.html">Cap</a></li>
+                    <li><a href="../HTML/Prod_Corner.html">Corner</a></li>
+                    <li><a href="../HTML/Prod_S05-S08.html">SO5-SO8</a></li>
+                    <li><a href="../HTML/Prod_Other.html">Other</a></li>
+                </ul>
+            </li>
+            <li><a href="About%20us.html">О нас</a></li>
+            <li><a href="Contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="basket">
+        <a class="basketName">Корзина<i class="fa-sharp fa-solid fa-basket-shopping" id="basketIcon"></i></a>
+    </div>
+</header>
+<div class="subHead"></div>
+
+<main>
+    <div class="left_block">
+        <div class="description">
+            <h2>МЫ ОТКРЫТЫ К СОТРУДНИЧЕСТВУ И ОБЩЕНИЮ</h2>
+            <p>Команда нашей компании всегда в полной готовности, и готова предоставить
+                ответ на все Ваши вопросы по товарам и любым аспектам возможного
+                сотрудничества. Иногда мы не можем дать ответ оперативно.
+                Однако, можете быть уверены, что Ваш вопрос не останется без внимания.</p>
+            <p>Каждое сообщение, полученное любым способом будет внимательно рассмотрен
+                специалистами соответствующего отдела.
+                В кратчайшие сроки мы предоставим Вам исчерпывающий ответ.</p>
+        </div>
+        <form action="#" method="get">
+            <h2>Написать сообщение</h2>
+            <p></p>
+            <div class="input_blocks">
+                <div class="input">
+                    <p>Имя</p>
+                    <label>
+                        <input tabindex="1" type="text" name="Name" value=""/>
+                    </label>
+                </div>
+
+                <div class="input">
+                    <p>Ваш Email</p>
+                    <label>
+                        <input tabindex="2"  type="text" name="Email" value=""/>
+                    </label>
+                </div>
+
+
+                <div class="input">
+                    <p>Телефон</p>
+                    <label>
+                        <input tabindex="3" type="tel" name="telephone" value=""/>
+                    </label>
+                </div>
+
+                <div class="input">
+                    <p>Тема сообщения</p>
+                    <label>
+                        <input tabindex="4" type="text" name="theme" value=""/>
+                    </label>
+                </div>
+            </div>
+
+            <div class="add_input">
+                <p>Текст сообщения</p>
+                <div class="big_input">
+                    <label>
+                        <textarea tabindex="6"  name="text" minlength="10" maxlength="1000"></textarea>
+                    </label>
+                </div>
+                <div class="file">
+                    <p>Прекрепить файл</p>
+                    <div class="input_wrapper">
+                        <input class="input_file" id="input_file" tabindex="5"  type="file" name="file" multiple accept="image/*" >
+                        <label for="input_file" class ="input_file-button">
+                            <span class="input_file-icon-wrapper"><i class="fa-solid fa-download"></i></span>
+                            <span class="input_file-button-text">Выберите файл</span>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+    <div class="right_block">
+        <div class="head_block">
+            <div class="contact_info">
+                <h2>КОНТАКТЫ</h2>
+                <p>г.Нижний Новгород,ул.Большая Покровская, д.82, ТЦ "Небо"</p>
+                <a href="tel:+79535123412"><p>Телефон: +79535123412</p></a>
+                <div class="call">
+                    <a>Нажмите, чтобы позвонить</a>
+                </div>
+            </div>
+            <div class="social_network">
+                <h2>СОЦИАЛЬНЫЕ СЕТИ</h2>
+                <div class="Inst">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>Инстаграм</p>
+                    </a>
+                </div>
+                <div class="Twitter">
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <p>Твиттер</p>
+                    </a>
+
+                </div>
+                <div class="Facebook">
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Фейсбук</p>
+                    </a>
+                </div>
+                <div class="Telegram">
+                    <a href="https://telegram.org/" target="_blank">
+                        <i class="fa-brands fa-telegram"></i>
+                        <p>Телеграм</p>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="map">
+            <h2>Местоположение магазина</h2><p></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2631.933875875354!2d43.984678963857725!3d56.30940164567276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d5b01e0cc807%3A0x10d94e21a7c51c54!2z0KLQoNCaINCd0LXQsdC-!5e0!3m2!1sru!2sru!4v1669749469027!5m2!1sru!2sru"
+                    width="730" height="400" style="border:0;" allowfullscreen=""
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+    </div>
+</main>
+
+
+<footer>
+    <div class="content">
+        <div class="about_us">
+            <h2>DESIGN LAMP</h2>
+            <p>Интернет-магазин дизайнерских ламп европейского производства.
+                Ассортимент — это лампы разных видов, подставки, декорации.</p>
+        </div>
+
+        <div class="contacts">
+            <h2>КОНТАКТЫ</h2>
+            <p>г.Нижний Новгород,ул.Большая Покровская
+                д.82, ТЦ "Небо"
+            </p>
+            <p>Телефон: +79535123412</p>
+        </div>
+        <div class="soc_info">
+            <h2>СОЦИАЛЬНЫЕ СЕТИ</h2>
+            <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+        <div class="info">
+            <h2>ИНФОРМАЦИЯ</h2>
+            <p><a href="#">Условия использования</a></p>
+            <p><a href="#">Публичный договор</a></p>
+            <p><a href="#">Политика конфиденциальности</a></p>
+        </div>
+    </div>
+    <div class="copyright">
+        <h2>DisLamp	&#169 2022</h2>
+    </div>
+</footer>
+<script src="../JS/SelectedQuantityFilesInButtons.js"></script>
+</body>
+</html>
